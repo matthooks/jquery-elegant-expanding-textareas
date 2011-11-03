@@ -2,7 +2,7 @@
 
 ## Description
 
-*Elegant Expanding Textareas* is a jQuery plugin that implements the expanding textarea technique pioneered by [Neil Jenkins](http://nmjenkins.com/) in his A List Apart Article entitled [Expanding Text Areas Made Elegant](http://www.alistapart.com/articles/expanding-text-areas-made-elegant/).
+**Elegant Expanding Textareas** is a jQuery plugin that implements the expanding textarea technique pioneered by [Neil Jenkins](http://nmjenkins.com/) in his A List Apart Article entitled [Expanding Text Areas Made Elegant](http://www.alistapart.com/articles/expanding-text-areas-made-elegant/).
 
 ## Usage
 
