@@ -14,9 +14,9 @@ pre {
 
 .expandingArea > textarea,
 .expandingArea > pre {
-  padding: 5px;
+  padding: 5px 5px 3px 5px;
   background: transparent;
-  font: 400 13px/16px helvetica, arial, sans-serif;
+  font: 400 16px/24px helvetica, arial, sans-serif;
   /* Make the text soft-wrap */
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -34,8 +34,7 @@ pre {
   /* This height is used when JS is disabled */
   height: 100px;
 }
-.expandingArea.active > textarea,
-.expandingArea.active > pre.clone {
+.expandingArea.expandsElegantly > textarea {
   /* Hide any scrollbars */
   overflow: hidden;
   position: absolute;
@@ -44,21 +43,13 @@ pre {
   height: 100%;
   /* Remove WebKit user-resize widget */
   resize: none;
-  color:transparent;
-}
-.expandingArea.active > pre.clone span strong {
-  width:1px;
-  height:13px;
-  vertical-align:baseline;
-  background-color:#000;
-  display:inline-block;
 }
 
 .expandingArea > pre {
   display: none;
 }
-.expandingArea.active > pre {
+.expandingArea.expandsElegantly > pre {
   display: block;
   /* Hide the text; just using it for sizing */
-/*  visibility: hidden;*/
+  visibility: hidden;
 }

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Expanding Text Areas</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="stylesheets/jquery.expanding-area.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+  </head>
+  <body>
+
+    <h1>
+      Direct binding:
+    </h1>
+
+    <pre>
+      $('#message_body').expandElegantly();
+    </pre>
+
+    <form id="single">
+      <fieldset>
+        <ol>
+          <li>
+            <label for="description">Message Body</label>
+            <div id="message_body" class="expandingArea">
+              <pre><span></span><br></pre>
+              <textarea></textarea>
+            </div>
+          </li>
+        </ol>
+      </fieldset>
+    </form>
+
+    <h1>
+      Delegation:
+    </h1>
+
+    <pre>
+      $('#delegation').expandElegantly('.expandingArea');
+    </pre>
+
+    <form id="delegation">
+      <fieldset>
+        <ol>
+          <li>
+            <label for="description">Job Description</label>
+            <div class="expandingArea">
+              <pre><span></span><br></pre>
+              <textarea id="description"></textarea>
+            </div>
+          </li>
+
+          <li>
+            <label for="how">How do people apply for this job?</label>
+            <div class="expandingArea">
+              <pre><span></span><br></pre>
+              <textarea id="how"></textarea>
+            </div>
+          </li>
+        </ol>
+      </fieldset>
+    </form>
+
+    <h1>
+      Minimum height and pre-existing text:
+    </h1>
+
+    <pre>
+      $('#minimum_height_and_pre_existing_text').expandElegantly('.expandingArea');
+    </pre>
+
+    <form id="minimum_height_and_pre_existing_text">
+      <fieldset>
+        <ol>
+          <li>
+            <label for="futurama_quote">What is your favorite Futurama quote?</label>
+            <div class="expandingArea">
+              <pre><span></span><br></pre>
+              <textarea id="futurama_quote">Noooooo! You can see how I lived before I met you. It's just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?
+
+Shut up and take my money! You, minion. Lift my arm. AFTER HIM! With a warning label this big, you know they gotta be fun! You, minion. Lift my arm. AFTER HIM!</textarea>
+            </div>
+          </li>
+          <li>
+            <label for="tell_us_more">Tell us more about yourself.</label>
+            <div id="tell_us_more_container" class="expandingArea">
+              <pre><span></span><br></pre>
+              <textarea id="tell_us_more"></textarea>
+            </div>
+          </li>
+        </ol>
+      </fieldset>
+    </form>
+
+    <script src="javascripts/vendor/jquery-1.7.min.js"></script>
+    <script src="javascripts/jquery.expanding-area.js"></script>
+
+    <script>
+      (function($) {
+
+        var options = {}
+
+        $(function() {
+          $('#message_body').expandElegantly(options);
+          $('#delegation').expandElegantly('.expandingArea');
+          $('#minimum_height_and_pre_existing_text').expandElegantly('.expandingArea');
+        });
+
+      })(jQuery);
+    </script>
+
+  </body>
+</html>

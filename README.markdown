@@ -2,7 +2,7 @@
 
 ## Description
 
-**Elegant Expanding Textareas** is a jQuery plugin that implements the expanding textarea technique pioneered by [Neil Jenkins](http://nmjenkins.com/) in his A List Apart article [Expanding Text Areas Made Elegant](http://www.alistapart.com/articles/expanding-text-areas-made-elegant/).
+**Elegant Expanding Textareas** is a jQuery 1.7+ plugin that implements the expanding textarea technique pioneered by [Neil Jenkins](http://nmjenkins.com/) in his A List Apart article [Expanding Text Areas Made Elegant](http://www.alistapart.com/articles/expanding-text-areas-made-elegant/).
 
 ## Usage
 
@@ -29,13 +29,21 @@
 <script>
 
   $(function() {
-    var options = {};
-    
-    // Bind to the first element returned by a jQuery selector...
-    $('.expandingArea').expandElegantly(options);
-    
-    // ...or delegate the event to a container for efficient use with multiple textareas
-    $('#form').expandElegantly('.expandingArea', options);
+    // var customMirroringMethod = function(area, span) {
+    //   span.text(area.val() + ' and some additional text')
+    // }
+    // var customActivationClass = 'evenMoreElegantlyExpanding'
+
+    // var options = {
+    //   method: customMirroringMethod,
+    //   activeClass: customActivationClass
+    // };
+
+    // Bind directly...
+    $('.expandingArea').expandElegantly(/* options */);
+
+    // ...or use event delegatation (Not supported < IE9)
+    $('#form').expandElegantly('.expandingArea'/*, options */);
   });
 
 </script>
