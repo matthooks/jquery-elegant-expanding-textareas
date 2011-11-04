@@ -54,7 +54,7 @@ This plugin should work in all browsers that support the `input` event and the C
 
 Previous techniques for expanding textareas generally utilized `setTimeout` polling to obtain the height and width of a block-level "mirror" element whose inner text matched the value of a textarea at regular intervals. This is inefficient and requires a "fudge factor" which causes the textarea to always be slightly larger than the content it holds. **How unsightly!**
 
-Neil's technique improves upon the these techniques in several ways. First, it eliminates the need for polling by utilizing the `input` event (and IE8+'s proprietary `onpropertychange` event) to handle the mirroring of content between the mirror element and the associated textarea.
+Neil's technique improves upon the these techniques in several ways. First, it eliminates the need for polling by utilizing the `input` event (and IE's proprietary `onpropertychange` event) to handle the mirroring of content between the mirror element and the associated textarea.
 
 Second, Neil's technique eliminates the need for a fudge factor by setting the textarea's width and height to 100% and positioning it absolutely over the mirror element inside of a relatively positioned container. When the container expands to fit the mirror, the textarea expands in turn, filling the container. **Nifty!**
 
