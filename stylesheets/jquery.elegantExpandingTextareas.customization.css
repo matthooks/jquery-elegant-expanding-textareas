@@ -20,6 +20,7 @@
  * Warning! Do not modify the following properties:
  * white-space, word-wrap, overflow, position, top, left
  * width, resize, display, visibility
+ *
  */
 .expandingArea > textarea,
 .expandingArea > pre {
@@ -29,4 +30,13 @@
   font-size:16px;
   line-height:24px;
   font-family:helvetica, arial, sans-serif;
+}
+
+/*
+ * If you need to set a default height for your textareas
+ * when JavaScript is disabled, this is the best way to
+ * do it.
+ */
+.expandingArea > textarea {
+  height:100px;
 }
