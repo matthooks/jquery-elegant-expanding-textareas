@@ -69,26 +69,24 @@
     </h1>
 
     <pre>
-      $('#minimum_height_and_pre_existing_text').expandElegantly('.expandingArea');
+      $('#min_pre_existing').expandElegantly('.expandingArea');
     </pre>
 
-    <form id="minimum_height_and_pre_existing_text">
+    <form id="min_pre_existing">
       <fieldset>
         <ol>
-          <li>
-            <label for="futurama_quote">What is your favorite Futurama quote?</label>
-            <div class="expandingArea">
-              <pre><span></span><br></pre>
-              <textarea id="futurama_quote">Noooooo! You can see how I lived before I met you. It's just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?
-
-Shut up and take my money! You, minion. Lift my arm. AFTER HIM! With a warning label this big, you know they gotta be fun! You, minion. Lift my arm. AFTER HIM!</textarea>
-            </div>
-          </li>
           <li>
             <label for="tell_us_more">Tell us more about yourself.</label>
             <div id="tell_us_more_container" class="expandingArea">
               <pre><span></span><br></pre>
               <textarea id="tell_us_more"></textarea>
+            </div>
+          </li>
+          <li>
+            <label for="futurama_quote">What is your favorite Futurama quote?</label>
+            <div class="expandingArea">
+              <pre><span></span><br></pre>
+              <textarea id="futurama_quote">Noooooo! You can see how I lived before I met you. It's just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?</textarea>
             </div>
           </li>
         </ol>
@@ -100,15 +98,11 @@ Shut up and take my money! You, minion. Lift my arm. AFTER HIM! With a warning l
 
     <script>
       (function($) {
-
-        var options = {}
-
         $(function() {
-          $('#message_body').expandElegantly(options);
+          $('#message_body').expandElegantly();
           $('#delegation').expandElegantly('.expandingArea');
-          $('#minimum_height_and_pre_existing_text').expandElegantly('.expandingArea');
+          $('#min_pre_existing').expandElegantly('.expandingArea');
         });
-
       })(jQuery);
     </script>
 

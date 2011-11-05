@@ -3,7 +3,7 @@
   mirrorContent = (area, span) ->
     span.text(area.val())
 
-  namespace = 'jQuery.expandElegantly'
+  namespace = 'jQuery.elegantExpandingTextareas'
 
   baseDefaults =
     method: mirrorContent
@@ -70,8 +70,8 @@
       options.selector = selector
     else
       # Options doesn't exist
-      if $.isPlainObject(selector) is true
-        # If the selector is an object literal, assume event binding
+      if $.isPlainObject(selector) is true || not selector?
+        # If the selector is an object literal or is missing, assume event binding
         klass = ElegantExpander
         options = selector
       else

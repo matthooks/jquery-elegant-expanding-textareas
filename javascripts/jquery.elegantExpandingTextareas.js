@@ -4,7 +4,7 @@ var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments)
   mirrorContent = function(area, span) {
     return span.text(area.val());
   };
-  namespace = 'jQuery.expandElegantly';
+  namespace = 'jQuery.elegantExpandingTextareas';
   baseDefaults = {
     method: mirrorContent,
     activeClass: 'expandsElegantly'
@@ -63,7 +63,7 @@ var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments)
     if (options != null) {
       options.selector = selector;
     } else {
-      if ($.isPlainObject(selector) === true) {
+      if ($.isPlainObject(selector) === true || !(selector != null)) {
         klass = ElegantExpander;
         options = selector;
       } else {
