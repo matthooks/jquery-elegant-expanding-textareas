@@ -1,0 +1,76 @@
+.expandingArea textarea,
+.expandingArea pre {
+  /* Reset styles for the textarea and mirror element. */
+  margin:0;
+  padding:0;
+  outline:0;
+  border:0;
+}
+
+.expandingArea {
+  /* Since we're resetting our textarea's normal styles,
+   * we need to style our container element to look like
+   * a textarea.
+   */
+  position:relative;
+  border:1px solid #888;
+  background:#fff;
+}
+
+.expandingArea > textarea,
+.expandingArea > pre {
+  /* Don't collapse white-space within the mirror
+   * element so it matches a textarea's behavior.
+   */
+  white-space:pre-wrap;
+
+  /* Prevent long lines from making the elements
+   * expand too far.
+   */
+  word-wrap:break-word;
+
+  /* The mirror element must have the same styles as
+   * the textarea in order for their sizes to match.
+   */
+  padding:5px;
+  background:transparent;
+  font-weight:normal;
+  font-size:16px;
+  line-height:24px;
+  font-family:helvetica, arial, sans-serif;
+}
+
+.expandingArea > textarea {
+  /* The border-box box model is used to allow
+   * padding whilst still keeping the overall width
+   * at exactly that of the containing element.
+   */
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+      -ms-box-sizing:border-box;
+          box-sizing:border-box;
+  width:100%;
+
+  /* This is the default height for the textarea
+   * that is used when JavaScript is disabled. */
+  height:100px;
+}
+.expandingArea.expandsElegantly > textarea {
+  /* Hide any scrollbars */
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  /* Remove WebKit user-resize widget */
+  resize:none;
+}
+
+.expandingArea > pre {
+  display:none;
+}
+.expandingArea.expandsElegantly > pre {
+  display:block;
+  /* Hide the text; just using it for sizing */
+  visibility:hidden;
+}
