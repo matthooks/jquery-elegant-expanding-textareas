@@ -9,8 +9,8 @@
 ```html
 <!-- somewhere in your head -->
 <link rel="stylesheet" href="stylesheets/jquery.elegantExpandingTextareas.css">
-<link rel="stylesheet" href="stylesheets/customStyles.css">
-<!-- see jquery.elegantExpandingTextareas.customization.css for customization ideas -->
+<link rel="stylesheet" href="stylesheets/yourCustomStyles.css">
+<!-- see stylesheets/jquery.elegantExpandingTextareas.customization.css for customization ideas -->
 
 <script src="javascripts/jquery-1.7.js"></script>
 <script src="javascripts/jquery.elegantExpandingTextareas.js"></script>
