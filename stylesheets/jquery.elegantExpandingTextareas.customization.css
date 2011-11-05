@@ -1,0 +1,32 @@
+/*
+ * By default, the container element is styled
+ * as if it were a textarea. Feel free to modify
+ * its appearance to suit your needs.
+ *
+ * Warning! Do not modify the following properties:
+ * position
+ */
+.expandingArea {
+  border:1px solid #888;
+  background:#fff;
+}
+
+/*
+ * You can customize the textarea and mirror element's
+ * appearance to suit your needs. The only caveat is
+ * that they _must_ share the same styles in order for
+ * their sizes to match.
+ *
+ * Warning! Do not modify the following properties:
+ * white-space, word-wrap, overflow, position, top, left
+ * width, resize, display, visibility
+ */
+.expandingArea > textarea,
+.expandingArea > pre {
+  padding:5px;
+  background:transparent;
+  font-weight:normal;
+  font-size:16px;
+  line-height:24px;
+  font-family:helvetica, arial, sans-serif;
+}
