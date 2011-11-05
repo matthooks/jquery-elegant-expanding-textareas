@@ -69,3 +69,13 @@ Second, Neil's technique eliminates the need for a fudge factor by setting the t
 Lastly, the technique degrades gracefully, leaving a normal textarea with a default height when Javascript is absent.
 
 For a full overview of the technique and potential extensions, do yourself a favor and read the [original article](http://www.alistapart.com/articles/expanding-text-areas-made-elegant/).
+
+## Contribution guidelines
+
+Have a bug fix or a feature that you're dying to contribute to the project? Great! Follow these steps to ensure a timely response:
+
+* Fork the official repository.
+* Make your changes in a topic branch.
+* Send a pull request.
+
+That's it! If I have any questions or concerns, I'll address them in the pull request's comments.
